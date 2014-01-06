@@ -430,4 +430,32 @@ $(document).ready(function() {
 
 	});
 
+//fill in the text area and direct them to contact us...
+$('#services').on('click', 'a', function(e) {
+
+	var service = $(this).parents('article').attr('id'),
+		message = "I would like to inquire about " + servicem + ".",
+		$message = $('#message');
+		
+      var tmr,n=-1; 
+
+	var typethis = function(m) { 
+        n++; 
+        
+        if(n == m.length) { 
+          clearInterval(tmr); 
+        } 
+        $message.text(m.substr(0,n));
+      } 
+
+
+	//reset message text
+	$message.text('');
+
+    tmr = setInterval(function(){typethis(message);},50);
+
+
+
+});
+
 });
