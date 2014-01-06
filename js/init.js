@@ -60,7 +60,7 @@
 						navPanel: {
 							breakpoints: 'mobile',
 							position: 'top',
-							size: '75%',
+							size: '25%',
 							html: '<div data-action="navList" data-args="nav"></div>'
 						}
 					},
@@ -436,7 +436,7 @@ $('#services').on('click', 'a', function(e) {
 	var service = $(this).parents('article').attr('id'),
 		message = "I would like to inquire about " + servicem + ".",
 		$message = $('#message');
-		
+
       var tmr,n=-1; 
 
 	var typethis = function(m) { 
