@@ -383,3 +383,51 @@
 				}
 
 	});
+
+
+$(document).ready(function() {
+	$('#submit').on('click', function(e){
+		e.preventDefault();
+
+		var inputs = $('input, textarea'),
+			error = false;
+
+		for (var i = inputs.length - 1; i >= 0; i--) {
+			if($(inputs[i]).val().length < 4) {error = true;}
+		};
+
+		if (error) {$('#errors').html('Please fill out the form.'); return false;}
+
+		var post_data = $('#contactform').serialize();
+
+				$.ajax({
+					  url: 'contact.php',
+					  data: post_data,
+					  type: "POST",
+					  dataType: "JSON"
+					})
+					.done(function(data) {
+
+						$('#errors').html('Sending...');
+
+						if (data.status === "success") {
+							$('#errors').hide();
+							$('#contactform').html(data.message);
+
+						} else {
+
+							$('#errors').html('Please try again.');
+
+						}
+
+					})
+
+					.fail(function(data) {
+						$('#errors').hide();
+						var message = "<h3 style='color: #f35858;'>Houston...we have a problem</h3><p>Our server is currently being temperamental. Please call us in the meantime or try again later. Sorry!</p>";
+						$('#contactform').html(message);
+					});
+
+	});
+
+});

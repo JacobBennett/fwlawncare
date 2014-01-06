@@ -103,7 +103,8 @@
 	
 		a:hover
 		{
-			color: #ef8376;
+			/*color: #ef8376;*/
+			color: #66DF79;
 			border-bottom-color: transparent;
 		}
 
@@ -287,6 +288,12 @@
 				display: block;
 				width: 100%;
 				margin: 0 0 4em 0;
+			}
+
+			.image.small-featured {
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
 			}
 			
 			.image.left
@@ -513,7 +520,8 @@
 		{
 			position: relative;
 			display: inline-block;
-			background: #df7366;
+			/*background: #df7366;*/
+			background: #66DF79;
 			color: #fff;
 			text-align: center;
 			border-radius: 0.5em;
@@ -527,7 +535,8 @@
 			.button:hover
 			{
 				color: #fff;
-				background: #ef8376;
+				/*background: #ef8376;*/
+				background: #9edaa5;
 			}
 			
 			.button:active
@@ -579,6 +588,8 @@
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
 /* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
 /*********************************************************************************/
+
+	.icon-lists li {line-height: 3.5em;}
 
 	.fa
 	{
@@ -643,7 +654,7 @@
 		.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
 		.pull-right{float:right}
 		.pull-left{float:left}
-		.fa.pull-left{margin-right:.3em}
+		.fa.pull-left{margin-right:.75em}
 		.fa.pull-right{margin-left:.3em}
 		.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
 		@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
@@ -1054,7 +1065,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header.jpg');
+		background-image: url('../img/lawnheader.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -1477,6 +1488,7 @@
 				width: 6em;
 				height: 6em;
 				border-radius: 100%;
+				/*background-color: rgba(72,57,73, 0.5);*/
 				background-color: rgba(72,57,73, 0.5);				
 				position: absolute;
 				top: 50%;
@@ -1529,7 +1541,8 @@
 			.carousel .forward:hover:before,
 			.carousel .backward:hover:before
 			{
-				background-color: rgba(239,131,118, 0.75);
+				/*background-color: rgba(239,131,118, 0.75);*/
+				background-color: rgba(42,201,67, 0.75);
 			}
 
 		.carousel .reel
@@ -1546,7 +1559,8 @@
 			width: 18em;
 			background: #fff;
 			text-align: center;
-			padding: 0 1em 3em 1em;
+			/*padding: 0 1em 3em 1em;*/
+			padding: 0 1em 1em 1em;
 			margin: 0 2em 0 0;
 			white-space: normal;
 			opacity: 1.0;
@@ -1569,10 +1583,105 @@
 				top: 0;
 				width: auto;
 				margin-right: -2em;
-				margin-bottom: 3em;
+				/*margin-bottom: 3em;*/
+				margin-bottom: 1em;
 			}
 		
 			.carousel article p
 			{
 				text-align: center;
+			}
+
+			/*
+			* === FORM ===
+			*/
+
+			/* Forms */
+
+		form
+		{
+		}
+		
+			form .actions
+			{
+				padding-top: 0;
+			}
+		
+			form label
+			{
+				display: block;
+			}
+		
+			form input.text,
+			form select,
+			form textarea
+			{
+				-webkit-appearance: none;
+				display: block;
+				background: #f3f4f5;
+				border: solid 1px #d2d7dc;
+				border-radius: 0.35em;
+				width: 100%;
+				padding: 0.85em;
+				-moz-transition: background-color 0.25s ease-in-out;
+				-webkit-transition: background-color 0.25s ease-in-out;
+				-o-transition: background-color 0.25s ease-in-out;
+				-ms-transition: background-color 0.25s ease-in-out;
+				transition: background-color 0.25s ease-in-out;
+			}
+
+				form input.text:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					background: #fff;
+				}
+				
+				form textarea
+				{
+					min-height: 7em;
+				}
+
+				form .formerize-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-webkit-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-ms-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-focus-inner
+				{
+					border: 0;
+				}
+				
+			.contact-form form input.text,
+			.contact-form form select,
+			.contact-form form textarea
+			{
+				background: #f5f6f7;
+			}
+
+			.contact-form form input.text:focus,
+			.contact-form form select:focus,
+			.contact-form form textarea:focus
+			{
+				background: #fff;
 			}
