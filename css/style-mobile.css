@@ -110,6 +110,8 @@
 /* UI                                                                            */
 /*********************************************************************************/
 
+	.button {margin-bottom: 1em;}
+
 	#navButton
 	{
 	}
@@ -314,3 +316,15 @@
 			{
 				margin-bottom: 2em;
 			}
+
+
+div#contact-list > ul {
+	display: block;
+	width: 100%;
+}
+
+.masonry-container a {
+	width: 50%;
+	float: left;
+	padding: 0 0.25em;
+}

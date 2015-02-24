@@ -1065,7 +1065,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../img/lawnheader.jpg');
+		background-image: url('../img/lawnheader2.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -1134,7 +1134,7 @@
 			margin: 0;
 		}
 		
-		#header .button
+		/*#header .button
 		{
 			border-radius: 100%;
 			width: 4.5em;
@@ -1143,7 +1143,7 @@
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
-		}
+		}*/
 		
 		#header header
 		{
@@ -1685,3 +1685,14 @@
 			{
 				background: #fff;
 			}
+
+
+.masonry-container a {
+	width: 25%;
+	float: left;
+	padding: 0 0.25em;
+}
+
+.masonry-container a img {
+	width: 100%;
+}
