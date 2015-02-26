@@ -521,7 +521,7 @@
 			position: relative;
 			display: inline-block;
 			/*background: #df7366;*/
-			background: #66DF79;
+			background: #f39c12;
 			color: #fff;
 			text-align: center;
 			border-radius: 0.5em;
@@ -532,11 +532,18 @@
 			outline: 0;
 		}
 
+		.button.cta-button {
+			text-transform: uppercase;
+			font-weight: 800;
+			border-radius: 0.25em;
+			text-shadow: 1px 1px rgba(0,0,0,0.25);
+		}
+
 			.button:hover
 			{
 				color: #fff;
 				/*background: #ef8376;*/
-				background: #9edaa5;
+				background: #E8BF7C;
 			}
 			
 			.button:active
@@ -1065,7 +1072,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../img/lawnheader2.jpg');
+		background-image: url('../img/lawnheader.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;

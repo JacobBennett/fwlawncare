@@ -14,13 +14,13 @@
 			header: {
 				fullScreen: true,
 				fadeIn: true,
-				fadeDelay: 500
+				fadeDelay: 0
 			},
 
 		// Carousels
 			carousels: {
 				speed: 4,
-				fadeIn: true,
+				fadeIn: false,
 				fadeDelay: 250
 			},
 
@@ -60,7 +60,7 @@
 						navPanel: {
 							breakpoints: 'mobile',
 							position: 'top',
-							size: '25%',
+							size: '40%',
 							html: '<div data-action="navList" data-args="nav"></div>'
 						}
 					},
@@ -68,7 +68,7 @@
 						navButton: {
 							breakpoints: 'mobile',
 							position: 'top-center',
-							width: 100,
+							width: '100%',
 							height: 50,
 							html: '<div class="toggle" data-action="togglePanel" data-args="navPanel"></div>'
 						}

@@ -129,14 +129,14 @@
 			{
 				content: '';
 				display: block;
-				width: 80px;
-				height: 30px;
+				width: 100%;
+				height: 35px;
 				position: absolute;
-				left: 50%;
-				margin-left: -40px;
-				background: url('images/toggle.svg') center center no-repeat, rgba(132,128,136,0.75);
+				/*left: 50%;*/
+				/*margin-left: -40px;*/
+				background: url('images/toggle2.svg') center center no-repeat, rgba(0,0,0,0.75);
 				border-top: 0;
-				border-radius: 0 0 0.35em 0.35em;
+				/*border-radius: 0 0 0.35em 0.35em;*/
 			}
 
 	#navPanel
@@ -156,7 +156,7 @@
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url('images/overlay.png');
+			/*background: url('images/overlay.png');*/
 			background-size: 128px 128px;
 		}
 
