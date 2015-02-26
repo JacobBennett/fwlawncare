@@ -129,14 +129,15 @@
 			{
 				content: '';
 				display: block;
-				width: 100%;
+				width: 200px;
 				height: 35px;
 				position: absolute;
-				/*left: 50%;*/
-				/*margin-left: -40px;*/
+				left: 50%;
+				margin-left: -100px;
 				background: url('images/toggle2.svg') center center no-repeat, rgba(0,0,0,0.75);
+				/*background: url('images/toggle2.svg') center center no-repeat, rgba(243,156,19,1);*/
 				border-top: 0;
-				/*border-radius: 0 0 0.35em 0.35em;*/
+				border-radius: 0 0 0.35em 0.35em;
 			}
 
 	#navPanel
