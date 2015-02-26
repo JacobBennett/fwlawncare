@@ -334,12 +334,13 @@
 			});
 
 		// Initialize header
-
+				_is_Mobile = false;
 			// Mobile devices don't do so well with fixed backgrounds and the fullscreen header :/
 				if (_isMobile)
 				{
 					$header.css('background-attachment', 'scroll');
 					helios_settings.header.fullScreen = false;
+					_is_Mobile = true;
 				}
 
 			// Homepage header

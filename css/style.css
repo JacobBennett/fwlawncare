@@ -12,6 +12,18 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+	.cf:before,
+	.cf:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	.cf:after {
+	    clear: both;
+	}
+
+	.text-center {text-align: center;}
+
 	body.paused *
 	{
 		-moz-transition: none;
@@ -537,6 +549,10 @@
 			font-weight: 800;
 			border-radius: 0.25em;
 			text-shadow: 1px 1px rgba(0,0,0,0.25);
+		}
+
+		.cta-button + .cta-button {
+			margin-left: 1em;
 		}
 
 			.button:hover
