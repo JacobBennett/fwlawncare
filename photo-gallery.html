@@ -571,14 +571,14 @@
 	
 	//on click
 	$(document).ready(function(){
-		// if(! _is_Mobile) {
 			var $container = $('#masonry-container');
-			// initialize
-			$container.masonry({
-			  // columnWidth: 200,
-			  itemSelector: '.item'
-			});	
-		// }
+
+			$container.imagesLoaded( function() {
+			  	$container.masonry({
+			  		// columnWidth: 200,
+			  		itemSelector: '.item'
+				});
+			});
 
 		$('#start-slideshow').on('click', function(e){
 			e.preventDefault();
